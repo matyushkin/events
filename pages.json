@@ -1,0 +1,7 @@
+{
+	"Яндекс": {
+		"name": "Мероприятия Яндекса",
+		"url": "https://events.yandex.ru/",
+		"func": "yandex"
+	}
+}
