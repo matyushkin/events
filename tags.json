@@ -1,4 +1,12 @@
 {
 	"Python":["Django", "Pytup"],
-	"Data Science":["CatBoost"]
+	"Data Science":["CatBoost"],
+	"C++":["C++"],
+	"Big Data":["Big Data", "Большие данные", "массивов данных"],
+	"Business":["бизнес"],
+	"Cloud": ["облак", "облачн"],
+	"GameDev":["GameDev", "геймдев"],
+	"MicroServices": ["микросервис"],
+	"NLP":["речевые технологии"],
+	"Containers":["Docker", "Kubernetes"]
 }
