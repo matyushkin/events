@@ -2,7 +2,20 @@
 	"Яндекс": {
 		"name": "Мероприятия Яндекса",
 		"url": "https://events.yandex.ru/",
-		"func": "yandex"
+		"func": "yandex",
+		"event_url":["start"],
+		"reg_url":  ["start"],
+		"title":    ["start"],
+		"date":     ["event"],
+		"time":     ["event"],
+		"location": ["event"],
+		"price":    ["event"],
+		"language": ["event"],
+		"speakers": ["event"],
+		"organizer":["event"],
+		"tags":     ["event"],
+		"type":     ["event"],
+		"prize":    ["event"]
 	},
 	"IAMPM": {
 		"name": "IAMPM",
