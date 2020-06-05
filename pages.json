@@ -12,10 +12,39 @@
 		"price":    ["event"],
 		"language": ["event"],
 		"speakers": ["event"],
+		"companies":["event"],
 		"organizer":["event"],
 		"tags":     ["event"],
 		"type":     ["event"],
 		"prize":    ["event"]
+	},
+	"Russian Hackers":		{
+		"name": "Russian Hackers",
+		"url": "https://russianhackers.org/"
+	},
+	"Авито": {
+		"name": "События Avito",
+		"url": "https://tech.avito.ru/events/"
+	},
+	"Тинькофф": {
+		"name": "Митапы Тинькофф",
+		"url": "https://meetup.tinkoff.ru/upcoming/"
+	},
+	"IT-Events": {
+		"name":"IT-Events",
+		"url":"https://it-events.com/",
+	},
+	"dev.by": {
+		"name":"ИТ в Беларуси",
+		"url":"https://events.dev.by/",
+	},
+	"DOU": {
+		"name":"Сообщество программистов Украины",
+		"url":"https://dou.ua/calendar/",
+	},
+	"ITVDN": {
+		"name": "ITVDN",
+		"url":"https://itvdn.com/ru/webinars"
 	},
 	"IAMPM": {
 		"name": "IAMPM",
