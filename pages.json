@@ -138,6 +138,15 @@
             }
         }
     },
+    "Data Fest": {
+        "name": "Data Fest",
+        "url": "https://fest.ai/"
+    },
+    "ods.ai Competitions":{
+        "name": "ods.ai Competitions",
+        "url": "https://ods.ai/competitions",
+        "type": "competition"
+    },
     "Russian Hackers":
     {
         "name": "Russian Hackers",
@@ -152,6 +161,11 @@
     {
         "name": "Митапы Тинькофф",
         "url": "https://meetup.tinkoff.ru/upcoming/"
+    },
+    "EPAM":
+    {
+        "name": "EPAM",
+        "url": "https://events.epam.com/"
     },
     "IT-Events":
     {
