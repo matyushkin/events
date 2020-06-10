@@ -1,22 +1,21 @@
 {
     "Яндекс":
     {
-        "url": "https://events.yandex.ru/",
-        "func": "yandex",
+        "start_url": "https://events.yandex.ru/",
         "event_url":
         {
             "page": "start",
             "selectors":
             {
-
+                "event-card__title": ["a", "class", "href"]
             }
         },
         "reg_url":
         {
-            "page": "start",
+            "page": "event",
             "selectors":
             {
-            	"events-info__registration-button": ["a", "class"]
+            	"events-info__registration-button": ["a", "class", "href"]
             }
         },
         "title":
@@ -24,7 +23,7 @@
             "page": "start",
             "selectors":
             {
-
+                "event-card__title": ["a", "class", "title"]
             }
         },
         "date":
@@ -32,7 +31,7 @@
             "page": "event",
             "selectors":
             {
-
+                "event-card__date": ["div", "class", "text"]
             }
         },
         "time":
@@ -40,9 +39,9 @@
             "page": "event",
             "selectors":
             {
-            	"events-program-item__time" : ["div", "class"],
-            	"events-info__registration-date" : ["div", "class"],
-            	"EventHeader__address" : ["div", "class"]
+            	"events-program-item__time" : ["div", "class", "text"],
+            	"events-info__registration-date" : ["div", "class", "text"],
+            	"EventHeader__address" : ["div", "class", "text"]
             }
         },
         "location":
@@ -50,13 +49,13 @@
             "page": "event",
             "selectors":
             {
-            	"events-info__location" : ["div", "class"]
+            	"events-info__location" : ["div", "class", "text"]
             }
         },
         "price":
         {
             "page": "event",
-            "default": 0,
+            "default": "0",
             "selectors":
             {
 
@@ -77,7 +76,7 @@
         	"page": "event",
         	"selectors":
         	{
-        		"events-program-item__talk" : ["div", "class"]
+        		"events-program-item__talk" : ["div", "class", "text"]
         	}
         },
         "speakers":
@@ -85,7 +84,7 @@
             "page": "event",
             "selectors":
             {
-            	"speaker__name" : ["div", "class"]
+            	"speaker__name" : ["div", "class", "text"]
             }
         },
         "speakers_companies":
@@ -93,21 +92,22 @@
             "page": "event",
             "selectors":
             {
-            	"speaker__company" : ["div", "class"]
+            	"speaker__company" : ["div", "class", "text"]
             }
         },
         "online_status": {
         	"page": "event",
         	"selectors":
         	{
-        		"EventHeader__place": ["span", "class"],
-        		"events-info__with-translation" : ["div", "class"],
-        		"events-info__online" : ["div", "class"]
+        		"EventHeader__place": ["span", "class", "text"],
+        		"events-info__with-translation" : ["div", "class", "text"],
+        		"events-info__online" : ["div", "class", "text"]
         	}
         },
-        "organizer":
+        "organizers":
         {
             "page": "event",
+            "default": "Яндекс",
             "selectors":
             {
 
