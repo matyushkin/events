@@ -1,0 +1,58 @@
+{
+    "https://events.yandex.ru/events/yasubbotnik/4-jul-2020":
+    {
+        "start": "Яндекс",
+        "event_url": "https://events.yandex.ru/events/yasubbotnik/4-jul-2020",
+        "title": "Я.Субботник по разработке интерфейсов. Онлайн, темы выбираете вы!",
+        "date": "2020-07-04"
+    },
+    "https://cloud.yandex.ru/events/145":
+    {
+        "start": "Яндекс",
+        "event_url": "https://cloud.yandex.ru/events/145",
+        "title": "about:cloud – бессерверные технологии и IoT",
+        "date": "2020-07-02"
+    },
+    "https://cloud.yandex.ru/events/143":
+    {
+        "start": "Яндекс",
+        "event_url": "https://cloud.yandex.ru/events/143",
+        "title": "Вебинар. Как работает сеть в Облаке",
+        "date": "2020-06-30"
+    },
+    "https://events.yandex.ru/events/zen-meetup/26-06-2020":
+    {
+        "start": "Яндекс",
+        "event_url": "https://events.yandex.ru/events/zen-meetup/26-06-2020",
+        "title": "Дзен-митап: видеорекомендации. Онлайн",
+        "date": "2020-06-26"
+    },
+    "https://events.yandex.ru/events/bugs-busters-25-06-2020":
+    {
+        "start": "Яндекс",
+        "event_url": "https://events.yandex.ru/events/bugs-busters-25-06-2020",
+        "title": "BugsBusters",
+        "date": "2020-06-25"
+    },
+    "https://cloud.yandex.ru/events/138":
+    {
+        "start": "Яндекс",
+        "event_url": "https://cloud.yandex.ru/events/138",
+        "title": "Вебинар. Начало пути в GameDev",
+        "date": "2020-06-25"
+    },
+    "https://cloud.yandex.ru/events/140":
+    {
+        "start": "Яндекс",
+        "event_url": "https://cloud.yandex.ru/events/140",
+        "title": "Вебинар. Обзор сервисов управления ключами и сертификатами",
+        "date": "2020-06-23"
+    },
+    "https://events.yandex.ru/events/hardware/19-june-2020":
+    {
+        "start": "Яндекс",
+        "event_url": "https://events.yandex.ru/events/hardware/19-june-2020",
+        "title": "Я.Железо: цифровая обработка сигналов",
+        "date": "2020-06-19"
+    }
+}

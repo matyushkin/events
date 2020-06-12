@@ -1,0 +1,81 @@
+{
+    "event_url":
+    {
+        "elements": "all",
+        "required": true
+    },
+    "title":
+    {
+        "elements": "all",
+        "required": true
+    },
+    "date":
+    {
+        "elements": "all",
+        "required": true
+    },
+    "time":
+    {
+        "elements": 1,
+        "required": true
+    },
+    "location":
+    {
+        "elements": 1,
+        "required": true
+    },
+    "online_status":
+    {
+        "elements": 1,
+        "required": true
+    },
+    "price":
+    {
+        "elements": 1,
+        "required": false
+    },
+    "language":
+    {
+        "elements": 1,
+        "required": false
+    },
+    "reg_url":{
+        "elements": 1,
+        "required": false
+    },
+    "themes":
+    {
+        "elements": "all",
+        "required": false
+    },
+    "speakers":
+    {
+        "elements": "all",
+        "required": false
+    },
+    "speakers_companies":
+    {
+        "elements": "all",
+        "required": false
+    },
+    "organizers":
+    {
+        "elements": "all",
+        "required": false
+    },
+    "tags":
+    {
+        "elements": "all",
+        "required": false
+    },
+    "prize":
+        {
+        "elements": 1,
+        "required": false
+    },
+    "event_type":
+    {
+        "elements": 1,
+        "required": false
+    }
+}

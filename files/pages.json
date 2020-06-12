@@ -28,7 +28,7 @@
         },
         "date":
         {
-            "page": "event",
+            "page": "start",
             "selectors":
             {
                 "event-card__date": ["div", "class", "text"]
@@ -63,13 +63,8 @@
         },
         "language":
         {
-            "page": "event",
-            "default": "ru",
-            "selectors":
-            {
-
-            }
-
+            "page": "analysis",
+            "default": "ru"
         },
         "themes":
         {
@@ -123,80 +118,72 @@
         },
         "tags":
         {
-            "page": "event",
-            "selectors":
-            {
-
-            }
+            "page": "analysis"
         },
-        "type":
+        "event_type":
         {
-            "page": "event",
-            "selectors":
-            {
-
-            }
+            "page": "analysis"
         }
     },
     "Data Fest": {
         "name": "Data Fest",
-        "url": "https://fest.ai/"
+        "start_url": "https://fest.ai/"
     },
     "ods.ai Competitions":{
         "name": "ods.ai Competitions",
-        "url": "https://ods.ai/competitions",
+        "start_url": "https://ods.ai/competitions",
         "type": "competition"
     },
     "Russian Hackers":
     {
         "name": "Russian Hackers",
-        "url": "https://russianhackers.org/"
+        "start_url": "https://russianhackers.org/"
     },
     "Авито":
     {
         "name": "События Avito",
-        "url": "https://tech.avito.ru/events/"
+        "start_url": "https://tech.avito.ru/events/"
     },
     "Тинькофф":
     {
         "name": "Митапы Тинькофф",
-        "url": "https://meetup.tinkoff.ru/upcoming/"
+        "start_url": "https://meetup.tinkoff.ru/upcoming/"
     },
     "EPAM":
     {
         "name": "EPAM",
-        "url": "https://events.epam.com/"
+        "start_url": "https://events.epam.com/"
     },
     "IT-Events":
     {
         "name": "IT-Events",
-        "url": "https://it-events.com/"
+        "start_url": "https://it-events.com/"
     },
     "dev.by":
     {
         "name": "ИТ в Беларуси",
-        "url": "https://events.dev.by/"
+        "start_url": "https://events.dev.by/"
     },
     "DOU":
     {
         "name": "Сообщество программистов Украины",
-        "url": "https://dou.ua/calendar/"
+        "start_url": "https://dou.ua/calendar/"
     },
     "ITVDN":
     {
         "name": "ITVDN",
-        "url": "https://itvdn.com/ru/webinars"
+        "start_url": "https://itvdn.com/ru/webinars"
     },
     "IAMPM":
     {
         "name": "IAMPM",
-        "url": "https://events.iampm.club/",
+        "start_url": "https://events.iampm.club/",
         "func": "iampm"
     },
     "ЦФТ":
     {
         "name": "Центр Финансовых Технологий",
-        "url": "https://team.cft.ru/events/",
+        "start_url": "https://team.cft.ru/events/",
         "func": "cft"
     }
 }
