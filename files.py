@@ -45,7 +45,6 @@ def fields_order(name):
 
 
 def get_content(name, url, field):
-    print(name, field)
     elements = fields[field]['elements']
     start_url = pages[name]['start_url']
     selectors = pages[name][field]['selectors']
@@ -54,7 +53,6 @@ def get_content(name, url, field):
     overlaps, content = [], []
 
     for key in selectors:
-        print(key)
         tag, attr, content_type = selectors[key]
         overlaps += soup.find_all(tag, {attr: key})
         if content_type == 'text':
