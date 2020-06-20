@@ -36,49 +36,48 @@ def pages_checked():
 
 def fields_order(name):
     result = {'start': [], 'event': [], 'analysis': []}
-    for field in fields:
+    page_fields = {key for key in pages[name] if key != 'start_url'}
+    for field in page_fields:
         for key in result.keys():
-            type_ = pages[name][field]['page']
-            if type_ == key:
+            if pages[name][field]['page'] == key:
                 result[key].append(field)
     return result
 
 
 def get_content(name, url, field):
-    elements = fields[field]['elements']
-    start_url = pages[name]['start_url']
-    selectors = pages[name][field]['selectors']
-    default = pages[name][field].get('default', '')
+    page = pages[name]
+    start_url = page['start_url']
+    elements = page[field]['elements']
+    selectors = page[field]['selectors']
+    default = page[field].get('default', '')
     soup = soups.get(url)
-    overlaps, content = [], []
+    overlaps = []
+    content = []
 
-    for key in selectors:
-        tag, attr, content_type = selectors[key]
-        overlaps += soup.find_all(tag, {attr: key})
-        if content_type == 'text':
-            content += [overlap.text.strip() for overlap in overlaps]
-        else:
-            content += [overlap[content_type] for overlap in overlaps]
-    else:
-        pass
+    try:
+        for key in selectors:
+            tag, attr, content_type = selectors[key]
+            overlaps += soup.find_all(tag, {attr: key})
+            if content_type == 'text':
+                content += [overlap.text.strip() for overlap in overlaps]
+            else:
+                content += [overlap[content_type] for overlap in overlaps]
 
-    if elements != 'all':
-        content = content[:elements]
-
-    if elements == 1:
-        if len(content) == 0:
-            content = '' or default
-        if len(content) == 1:
-            content = content[0]
-
-    if elements == 'all':
-        if len(content) == 0:
-            content = [default]
-
-    if url != start_url:
-        try:
+        if elements == 1:
+            if len(content) == 0:
+                content = '' or default
+            if len(content) >= 1:
+                content = content[0]
             content = eval(f'handlers.{field}(content, name)')
-        except AttributeError as err:
-            print(err)
+        elif elements == 'all':
+            if len(content) == 0:
+                content = [default]
+            new_content = []
+            for c in content:
+                new_content.append(eval(f'handlers.{field}(c, name)'))
+            content = new_content
+    
+    except AttributeError as err:
+        print(err)
 
     return content

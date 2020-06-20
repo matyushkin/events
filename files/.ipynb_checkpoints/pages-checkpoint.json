@@ -5,7 +5,6 @@
         "event_url":
         {
             "page": "start",
-            "elements": "all",
             "selectors":
             {
                 "event-card__title": ["a", "class", "href"]
@@ -14,7 +13,6 @@
         "reg_url":
         {
             "page": "event",
-            "elements": 1,
             "selectors":
             {
             	"events-info__registration-button": ["a", "class", "href"]
@@ -23,7 +21,6 @@
         "title":
         {
             "page": "start",
-            "elements": "all",
             "selectors":
             {
                 "event-card__title": ["a", "class", "title"]
@@ -32,7 +29,6 @@
         "date":
         {
             "page": "start",
-            "elements": "all",
             "selectors":
             {
                 "event-card__date": ["div", "class", "text"]
@@ -41,19 +37,16 @@
         "time":
         {
             "page": "event",
-            "elements": 1,
             "selectors":
             {
             	"events-program-item__time" : ["div", "class", "text"],
             	"events-info__registration-date" : ["div", "class", "text"],
-            	"EventHeader__address" : ["div", "class", "text"],
-                "EventSpeeches__time": ["span", "class", "text"]
+            	"EventHeader__address" : ["div", "class", "text"]
             }
         },
         "location":
         {
             "page": "event",
-            "elements": 1,
             "selectors":
             {
             	"events-info__location" : ["div", "class", "text"]
@@ -62,7 +55,6 @@
         "price":
         {
             "page": "event",
-            "elements": 1,
             "default": "0",
             "selectors":
             {
@@ -72,33 +64,19 @@
         "language":
         {
             "page": "analysis",
-            "elements": 1,
             "default": "ru"
         },
         "themes":
         {
         	"page": "event",
-            "elements": "all",
         	"selectors":
         	{
-        		"events-program-item__talk" : ["div", "class", "text"],
-                "EventSpeeches__title": ["h5", "class", "text"]
+        		"events-program-item__talk" : ["div", "class", "text"]
         	}
-        },
-        "description":
-        {
-            "page": "event",
-            "elements": "all",
-            "selectors":
-            {
-                "text-block__container": ["div", "class", "text"],
-                "EventInfo__description": ["div", "class", "text"]
-            }
         },
         "speakers":
         {
             "page": "event",
-            "elements": "all",
             "selectors":
             {
             	"speaker__name" : ["div", "class", "text"]
@@ -107,7 +85,6 @@
         "speakers_companies":
         {
             "page": "event",
-            "elements": "all",
             "selectors":
             {
             	"speaker__company" : ["div", "class", "text"]
@@ -115,7 +92,6 @@
         },
         "online_status": {
         	"page": "event",
-            "elements": 1,
         	"selectors":
         	{
         		"EventHeader__place": ["span", "class", "text"],
@@ -126,7 +102,6 @@
         "organizers":
         {
             "page": "event",
-            "elements": "all",
             "default": "Яндекс",
             "selectors":
             {
@@ -135,17 +110,17 @@
         },
         "prize":
         {
-            "page": "analysis"
+            "page": "event",
+            "selectors":
+            {
+
+            }
         },
         "tags":
         {
             "page": "analysis"
         },
         "event_type":
-        {
-            "page": "analysis"
-        },
-        "honor_description":
         {
             "page": "analysis"
         }
