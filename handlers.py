@@ -18,6 +18,11 @@ def event_url(url, name):
     return url
 
 
+def reg_url(url, name):
+    url = urls.utm_cleaner(url)
+    return url
+
+
 def time(text, name):
     if name == 'Яндекс':
         pattern = re.compile(r'\d{2}:\d{2}')
