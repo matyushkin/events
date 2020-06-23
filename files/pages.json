@@ -17,7 +17,8 @@
             "elements": 1,
             "selectors":
             {
-            	"events-info__registration-button": ["a", "class", "href"]
+            	"events-info__registration-button": ["a", "class", "href"],
+                "EventContent__reg-button": ["a", "class", "href"]
             }
         },
         "title":

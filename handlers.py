@@ -6,6 +6,7 @@ import langs
 import urls
 
 current_date = datetime.date.today()
+tomorrow = current_date + datetime.timedelta(days=1)
 
 def title(text, name):
     """Обработка заголовков событий"""
@@ -40,30 +41,31 @@ def online_status(text, name):
 
 
 def date(date_string, name):
+    if 'сегодня' in date_string.lower():
+        return current_date.isoformat()
+    elif 'завтра' in date_string.lower():
+        return tomorrow.isoformat()
+
     if name == 'Яндекс':
         '''Parsing date in format вт, 9 июня'''
         lang = 'rus'
-        if 'сегодня' in date_string.lower():
-            event_date = current_date
+        weekdays = langs.date_alias[lang]['weekdays']['short']
+        months = langs.date_alias[lang]['months']['gentive']
+
+        weekday, event_day, month = date_string.split()
+        event_day = int(event_day)
+        event_month = months.index(month) + 1
+        event_weekday = weekdays.index(weekday[:-1])
+        event_year = current_date.year
+
+        # Case for the end of year: too old events are not in list
+        # but there can be next year events pages in the last half of current year
+        if (event_month-current_date.month) < -3:
+            event_year += 1
+
+        event_date = datetime.date(event_year, event_month, event_day)
+        if event_date.weekday() == event_weekday:
             return event_date.isoformat()
-        else:
-            weekdays = langs.date_alias[lang]['weekdays']['short']
-            months = langs.date_alias[lang]['months']['gentive']
-
-            weekday, event_day, month = date_string.split()
-            event_day = int(event_day)
-            event_month = months.index(month) + 1
-            event_weekday = weekdays.index(weekday[:-1])
-            event_year = current_date.year
-
-            # Case for the end of year: too old events are not in list
-            # but there can be next year events pages in the last half of current year
-            if (event_month-current_date.month) < -3:
-                event_year += 1
-
-            event_date = datetime.date(event_year, event_month, event_day)
-            if event_date.weekday() == event_weekday:
-                return event_date.isoformat()
 
 
 def registration_opened(text, name):
