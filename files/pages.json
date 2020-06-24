@@ -177,13 +177,53 @@
     },
     "EPAM":
     {
-        "name": "EPAM",
-        "start_url": "https://events.epam.com/"
+        "start_url": "https://events.epam.com/",
     },
     "IT-Events":
     {
         "name": "IT-Events",
-        "start_url": "https://it-events.com/"
+        "start_url": "https://it-events.com/",
+        "event_url":
+        {
+            "page": "start",
+            "elements": "all",
+            "selectors":
+            {
+                "event-list-item__title": ["a", "class", "href"]
+            }
+        },
+        "reg_url":
+        {
+            "page": "event",
+            "elements": 1,
+            "selectors":{}
+        },
+        "title":
+        {
+            "page": "start",
+            "elements": "all",
+            "selectors":
+            {
+                "event-list-item__title": ["a", "class", "title"]
+            }
+        },
+        "date":
+        {
+            "page": "start",
+            "elements": "all",
+            "selectors":
+            {
+                "event-list-item__info": ["div", "class", "text"]
+            }
+        },
+        "online_status": {
+            "page": "start",
+            "elements": "all",
+            "selectors":
+            {
+                "event-list-item__info_online": ["div", "class", "text"]
+            }
+        },
     },
     "dev.by":
     {
