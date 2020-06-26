@@ -1,7 +1,6 @@
 {
-    "Яндекс":
+    "https://events.yandex.ru/":
     {
-        "start_url": "https://events.yandex.ru/",
         "event_url":
         {
             "page": "start",
@@ -177,12 +176,10 @@
     },
     "EPAM":
     {
-        "start_url": "https://events.epam.com/",
+        "start_url": "https://events.epam.com/"
     },
-    "IT-Events":
+    "https://it-events.com/":
     {
-        "name": "IT-Events",
-        "start_url": "https://it-events.com/",
         "event_url":
         {
             "page": "start",
@@ -223,7 +220,7 @@
             {
                 "event-list-item__info_online": ["div", "class", "text"]
             }
-        },
+        }
     },
     "dev.by":
     {

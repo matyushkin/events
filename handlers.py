@@ -8,23 +8,25 @@ import urls
 current_date = datetime.date.today()
 tomorrow = current_date + datetime.timedelta(days=1)
 
-def title(text, name):
+def title(text, page_data):
     """Обработка заголовков событий"""
     return text
 
 
-def event_url(url, name):
+def event_url(url, page_data):
     url = urls.utm_cleaner(url)
-    url = urls.add_home(url, files.pages[name]['start_url'])
+    url = urls.add_home(url, page_data['start_url'])
     return url
 
 
-def reg_url(url, name):
+def reg_url(url, page_data):
     url = urls.utm_cleaner(url)
+    if url[0] == '#':
+        url = page_data['event_url'] + url
     return url
 
 
-def time(text, name):
+def time(text, page_data):
     if name == 'Яндекс':
         pattern = re.compile(r'\d{2}:\d{2}')
         time_string = pattern.search(text)

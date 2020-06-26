@@ -34,23 +34,27 @@ def pages_checked():
     return result
 
 
-def fields_order(name):
+def fields_order(start_url):
     result = {'start': [], 'event': [], 'analysis': []}
-    page_fields = {key for key in pages[name] if key != 'start_url'}
+    page_fields = {key for key in pages[start_url]}
     for field in page_fields:
         for key in result.keys():
-            if pages[name][field]['page'] == key:
+            if pages[start_url][field]['page'] == key:
                 result[key].append(field)
     return result
 
 
-def get_content(name, url, field):
-    page = pages[name]
-    start_url = page['start_url']
-    elements = page[field]['elements']
-    selectors = page[field]['selectors']
-    default = page[field].get('default', '')
-    soup = soups.get(url)
+def get_content(page_data, field):
+    start_url = page_data['start_url']
+    start_page_data = pages[start_url]
+    elements = start_page_data[field]['elements']
+    selectors = start_page_data[field]['selectors']
+    default = start_page_data[field].get('default', '')
+    event_url = page_data.get('event_url'):
+    if event_url:
+        soup = soups.get(event_url)
+    else:
+        soup = soups.get(start_url)
     overlaps = []
     content = []
 
@@ -68,13 +72,13 @@ def get_content(name, url, field):
                 content = '' or default
             if len(content) >= 1:
                 content = content[0]
-            content = eval(f'handlers.{field}(content, name)')
+            content = eval(f'handlers.{field}(content, page_data)')
         elif elements == 'all':
             if len(content) == 0:
                 content = [default]
             new_content = []
             for c in content:
-                new_content.append(eval(f'handlers.{field}(c, name)'))
+                new_content.append(eval(f'handlers.{field}(c, page_data)'))
             content = new_content
     
     except AttributeError as err:
