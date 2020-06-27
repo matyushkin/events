@@ -44,7 +44,7 @@ def fields_order(start_url):
     return result
 
 
-def get_content(page_data, field):
+def get_content(page_data, field, force):
     start_url = page_data['start_url']
     start_page_data = pages[start_url]
     elements = start_page_data[field]['elements']
@@ -52,7 +52,7 @@ def get_content(page_data, field):
     default = start_page_data[field].get('default', '')
     event_url = page_data.get('event_url')
     url = event_url if event_url else start_url
-    soup = soups.get(url)
+    soup = soups.get(url, force)
     overlaps = []
     content = []
 
