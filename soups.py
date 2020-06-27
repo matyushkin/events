@@ -24,13 +24,12 @@ def write_soups(soups):
         f.write(compressed)
 
 
-def get(url, force):
+def get(url, force=False):
     '''Returns (with saving) soup objects'''
     if force or url not in soups:
         page = requests.get(url, headers=headers).text
         soup = BeautifulSoup(page, 'html.parser')
         soups.update({url: soup})
-
     else:
         soup = soups[url]
     # remove all javascript and stylesheet code

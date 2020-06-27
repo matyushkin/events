@@ -25,6 +25,18 @@ with open('files/tags.json') as tags_file:
 with open('files/cities.txt') as cities_file:
     cities = cities_file.read().split('\n')
 
+# events that don't correspond to current parser possibilities
+with open('files/events_special.json') as special_file:
+    events_special = json.load(special_file)
+
+# events that I want to be promoted
+with open('files/events_promo.json') as promo_file:
+    events_promo = json.load(promo_file)
+
+# events that I don't like
+with open('files/events_bad.json') as bad_file:
+    events_bad = json.load(bad_file)
+
 
 def pages_checked():
     '''Check if all meta_fields are represented for page'''

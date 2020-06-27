@@ -81,7 +81,7 @@ def registration_opened(text, page_data):
 
 
 def organizers(list_of_organizers, page_data):
-    return list(set(list_of_organizers))
+    return list_of_organizers
 
 
 def location(location_string, page_data):
