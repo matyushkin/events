@@ -9,9 +9,19 @@ headers = requests.utils.default_headers()
 path = "files/soups.bz2"
 
 
-with open(path, "rb") as f:
-    decompressed = bz2.decompress(f.read())
-    soups = pickle.loads(decompressed)
+def read_soups():
+    with open(path, "rb") as f:
+        decompressed = bz2.decompress(f.read())
+        return pickle.loads(decompressed)
+
+
+soups = read_soups()
+
+def write_soups(soups):
+    with open(path, "wb") as f:
+        pickled = pickle.dumps(soups)
+        compressed = bz2.compress(pickled)
+        f.write(compressed)
 
 
 def get(url, force):
@@ -20,10 +30,6 @@ def get(url, force):
         page = requests.get(url, headers=headers).text
         soup = BeautifulSoup(page, 'html.parser')
         soups.update({url: soup})
-        with open(path, "wb") as f:
-            pickled = pickle.dumps(soups)
-            compressed = bz2.compress(pickled)
-            f.write(compressed)
 
     else:
         soup = soups[url]

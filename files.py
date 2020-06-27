@@ -2,9 +2,12 @@ import json
 import handlers
 import soups
 
-# all start pages
-with open('files/pages.json') as pages_file:
+# all start pages and fields for such type of start and event pages
+with open('files/pages_fields.json') as pages_file:
     pages = json.load(pages_file)
+
+with open('files/pages_info.json') as pages_info_file:
+    pages_info = json.load(pages_info_file)
 
 # main events dict-type structure
 with open('files/events.json') as events_file:

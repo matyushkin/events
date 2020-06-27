@@ -78,3 +78,35 @@ def registration_opened(text, page_data):
             return "True"
         else:
             return "False"
+
+
+def organizers(list_of_organizers, page_data):
+    return list(set(list_of_organizers))
+
+
+def location(location_string, page_data):
+    if location_string.lower() in ["онлайн", "online"]:
+        location_string = "Online"
+    return location_string
+
+
+def description(list_of_descriptions, page_data):
+    return  list_of_descriptions
+
+
+def themes(list_of_themes, page_data):
+    return list_of_themes
+
+
+def speakers(list_of_speakers, page_data):
+    return list_of_speakers
+
+
+def speakers_companies(list_of_speakers_companies, page_data):
+    return list_of_speakers_companies
+
+
+def price(price_string, page_data):
+    return price_string
+
+

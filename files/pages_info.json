@@ -1,0 +1,16 @@
+{
+    "https://events.yandex.ru/":
+    {
+        "name": "Яндекс",
+        "load": "with_footer",
+        "logo_file_name": "yandex.png",
+        "type": "company"
+    },
+    "https://it-events.com/":
+    {
+        "name": "IT-Events",
+        "load": "multiple",
+        "logo_file_name": "yandex.png",
+        "type": "aggregator"
+    }
+}
