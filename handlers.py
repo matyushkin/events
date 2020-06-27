@@ -27,14 +27,14 @@ def reg_url(url, page_data):
 
 
 def time(text, page_data):
-    if name == 'Яндекс':
+    if page_data['start_url'] == 'https://events.yandex.ru/':
         pattern = re.compile(r'\d{2}:\d{2}')
         time_string = pattern.search(text)
         time_string = time_string.group()
         return time_string
 
 
-def online_status(text, name):
+def online_status(text, page_data):
     if text in ('Online', 'Будет трансляция',
                   'Прямая трансляция', 'Прямой эфир'):
         return 'Online'
@@ -42,23 +42,26 @@ def online_status(text, name):
         return 'Offline'
 
 
-def date(date_string, name):
+def date(date_string, page_data):
     if 'сегодня' in date_string.lower():
         return current_date.isoformat()
     elif 'завтра' in date_string.lower():
         return tomorrow.isoformat()
 
-    if name == 'Яндекс':
-        '''Parsing date in format вт, 9 июня'''
+    if page_data['start_url'] == 'https://events.yandex.ru/':
+        '''Parsing date in format вт, 9 июня and 22 июля'''
         lang = 'rus'
-        weekdays = langs.date_alias[lang]['weekdays']['short']
         months = langs.date_alias[lang]['months']['gentive']
 
-        weekday, event_day, month = date_string.split()
-        event_day = int(event_day)
-        event_month = months.index(month) + 1
-        event_weekday = weekdays.index(weekday[:-1])
         event_year = current_date.year
+
+        month_flags = [date_string.find(month) for month in months]
+        month_ind = month_flags.index(max(month_flags))
+        event_month = month_ind + 1
+        
+        # Day is pre
+        m = date_string.split().index(months[month_ind])
+        event_day = int(date_string.split()[m-1])
 
         # Case for the end of year: too old events are not in list
         # but there can be next year events pages in the last half of current year
@@ -66,12 +69,11 @@ def date(date_string, name):
             event_year += 1
 
         event_date = datetime.date(event_year, event_month, event_day)
-        if event_date.weekday() == event_weekday:
-            return event_date.isoformat()
+        return event_date.isoformat()
 
 
-def registration_opened(text, name):
-    if name == 'Яндекс':
+def registration_opened(text, page_data):
+    if page_data['start_url'] == 'https://events.yandex.ru/':
         if 'открыт' in text:
             return "True"
         else:

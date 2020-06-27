@@ -50,11 +50,9 @@ def get_content(page_data, field):
     elements = start_page_data[field]['elements']
     selectors = start_page_data[field]['selectors']
     default = start_page_data[field].get('default', '')
-    event_url = page_data.get('event_url'):
-    if event_url:
-        soup = soups.get(event_url)
-    else:
-        soup = soups.get(start_url)
+    event_url = page_data.get('event_url')
+    url = event_url if event_url else start_url
+    soup = soups.get(url)
     overlaps = []
     content = []
 
