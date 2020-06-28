@@ -1,5 +1,7 @@
 {
+	"Backend":["Django", "Backend", "Node.js"],
 	"Python":["Django", "Pytup"],
+	"JavaScript":["JavaScript", "Node.js", ".js"],
 	"Data Science":["CatBoost", "речевые технологии"],
 	"C++":["C++"],
 	"Big Data":["Big Data", "Большие данные", "массивов данных"],
@@ -10,5 +12,6 @@
 	"Natural Language Processing":["речевые технологии"],
 	"Containers":["Docker", "Kubernetes"],
 	"Hardware":["железо", "пайка"],
-	"Security":["ключами", "сертификатами"]
+	"Security":["ключами", "сертификатами"],
+	"Documentation":["Гипербатон"]
 }
