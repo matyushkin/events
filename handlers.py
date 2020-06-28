@@ -94,16 +94,21 @@ def description(list_of_descriptions, page_data):
     return  list_of_descriptions
 
 
-def themes(list_of_themes, page_data):
-    return list_of_themes
+def themes(theme, page_data):
+    bad_themes = ['Начало регистрации',
+                  'Общение',
+                  'Заказываем пиццу и ставим оценки мероприятию']
+    if theme in bad_themes:
+        theme = ''
+    return theme
 
 
-def speakers(list_of_speakers, page_data):
-    return list_of_speakers
+def speakers(speaker, page_data):
+    return speaker
 
 
-def speakers_companies(list_of_speakers_companies, page_data):
-    return list_of_speakers_companies
+def speakers_companies(speaker_company, page_data):
+    return speaker_company
 
 
 def price(price_string, page_data):

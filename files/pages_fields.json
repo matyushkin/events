@@ -101,7 +101,8 @@
             "elements": "all",
             "selectors":
             {
-            	"speaker__name" : ["div", "class", "text"]
+            	"speaker__name" : ["div", "class", "text"],
+                "yc-persona__text": ["div", "class", "text"]
             }
         },
         "speakers_companies":
