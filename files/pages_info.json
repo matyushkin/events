@@ -3,6 +3,7 @@
     {
         "name": "Яндекс",
         "load": "with_footer",
+        "footer_clicks": 1,
         "logo_file_name": "yandex.png",
         "type": "company"
     },

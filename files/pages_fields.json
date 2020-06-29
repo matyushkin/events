@@ -102,7 +102,8 @@
             "selectors":
             {
             	"speaker__name" : ["div", "class", "text"],
-                "yc-persona__text": ["div", "class", "text"]
+                "yc-persona__text": ["div", "class", "text"],
+                "EventSpeaker__name": ["div", "class", "text"]
             }
         },
         "speakers_companies":
@@ -111,7 +112,8 @@
             "elements": "all",
             "selectors":
             {
-            	"speaker__company" : ["div", "class", "text"]
+            	"speaker__company" : ["div", "class", "text"],
+                "EventSpeaker__description": ["div", "class", "text"]
             }
         },
         "online_status": {

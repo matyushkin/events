@@ -95,7 +95,9 @@ def description(list_of_descriptions, page_data):
 
 
 def themes(theme, page_data):
-    bad_themes = ['Начало регистрации',
+    bad_themes = ['Регистрация',
+                  'Приветствие модератора',
+                  'Начало регистрации',
                   'Общение',
                   'Заказываем пиццу и ставим оценки мероприятию']
     if theme in bad_themes:

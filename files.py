@@ -67,7 +67,7 @@ def get_content(page_data, field, force):
     default = start_page_data[field].get('default', '')
     event_url = page_data.get('event_url')
     url = event_url if event_url else start_url
-    soup = soups.get(url, force)
+    soup = soups.get(url, start_url, force)
     overlaps = []
     content = []
 

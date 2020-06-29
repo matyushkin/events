@@ -4,6 +4,8 @@
 	"JavaScript":["JavaScript", "Node.js", ".js"],
 	"Data Science":["CatBoost", "речевые технологии"],
 	"C++":["C++"],
+	".NET": ["ASP.NET"],
+	"C#": [".NET"],
 	"Big Data":["Big Data", "Большие данные", "массивов данных"],
 	"Business":["бизнес"],
 	"Cloud": ["облак", "облачн"],
