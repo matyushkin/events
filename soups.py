@@ -1,4 +1,5 @@
 # compressing and uncompressing soup structures
+import files
 import os
 import pickle
 import bz2
@@ -58,3 +59,14 @@ def get(url, start_url, force=False):
     for script in soup(["script", "style", "iframe"]):
         script.extract()
     return soup
+
+
+def force_update_soups():
+    for url in files.soups.soups.keys():
+        event_url_data = files.events.get(url)
+        if event_url_data:
+            start_url = event_url_data.get('start_url')
+        else:
+            start_url = url
+        get(url, start_url, force=True)
+    write_soups(soups)

@@ -21,6 +21,10 @@ with open('files/fields.json') as fields_file:
 with open('files/tags.json') as tags_file:
     tags = json.load(tags_file)
 
+# keywords for types recognition
+with open('files/event_types.json') as event_types_file:
+    event_types = json.load(event_types_file)
+
 # cities where events are registered
 with open('files/cities.txt') as cities_file:
     cities = cities_file.read().split('\n')
@@ -59,26 +63,37 @@ def fields_order(start_url):
     return result
 
 
-def get_content(page_data, field, force):
+def get_content(page_data, field):
     start_url = page_data['start_url']
     start_page_data = pages[start_url]
     elements = start_page_data[field]['elements']
     selectors = start_page_data[field]['selectors']
+    excluding_selectors = start_page_data[field].get('excluding_selectors', None)
     default = start_page_data[field].get('default', '')
     event_url = page_data.get('event_url')
     url = event_url if event_url else start_url
-    soup = soups.get(url, start_url, force)
-    overlaps = []
+    soup = soups.get(url, start_url)
+    overlaps, ex_overlaps = [], []
     content = []
 
     try:
+        #print('FIELD', field)
+        # Собираем информацию из селекторов, убираем лишние селекторы
         for key in selectors:
             tag, attr, content_type = selectors[key]
             overlaps += soup.find_all(tag, {attr: key})
+        if excluding_selectors is not None:
+            for ex_key in excluding_selectors:
+                ex_tag, ex_attr = excluding_selectors[ex_key]
+                ex_overlaps += soup.find_all(ex_tag, {ex_attr: ex_key})
+        for _ in ex_overlaps:
+            overlaps.remove(_)
+        
+        for overlap in overlaps:
             if content_type == 'text':
-                content += [overlap.text.strip() for overlap in overlaps]
+                content.append(overlap.text.strip())
             else:
-                content += [overlap[content_type] for overlap in overlaps]
+                content.append(overlap[content_type])
 
         if elements == 1:
             if len(content) == 0:
@@ -97,4 +112,5 @@ def get_content(page_data, field, force):
     except AttributeError as err:
         print(err)
 
+    #print(url, field, content)
     return content

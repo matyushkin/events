@@ -17,7 +17,8 @@
             "selectors":
             {
             	"events-info__registration-button": ["a", "class", "href"],
-                "EventContent__reg-button": ["a", "class", "href"]
+                "EventContent__reg-button": ["a", "class", "href"],
+                "y-button": ["a", "class", "href"]
             }
         },
         "title":
@@ -47,7 +48,8 @@
             	"events-program-item__time" : ["div", "class", "text"],
             	"events-info__registration-date" : ["div", "class", "text"],
             	"EventHeader__address" : ["div", "class", "text"],
-                "EventSpeeches__time": ["span", "class", "text"]
+                "EventSpeeches__time": ["span", "class", "text"],
+                "events-program-item__time": ["div", "class", "text"]
             }
         },
         "location":
@@ -82,7 +84,8 @@
         	"selectors":
         	{
         		"events-program-item__talk" : ["div", "class", "text"],
-                "EventSpeeches__title": ["h5", "class", "text"]
+                "EventSpeeches__title": ["h5", "class", "text"],
+                "events-program-item__title" : ["div", "class", "text"]
         	}
         },
         "description":
@@ -103,7 +106,8 @@
             {
             	"speaker__name" : ["div", "class", "text"],
                 "yc-persona__text": ["div", "class", "text"],
-                "EventSpeaker__name": ["div", "class", "text"]
+                "EventSpeaker__name": ["div", "class", "text"],
+                "events-speaker__name": ["div", "class", "text"]
             }
         },
         "speakers_companies":
@@ -113,7 +117,8 @@
             "selectors":
             {
             	"speaker__company" : ["div", "class", "text"],
-                "EventSpeaker__description": ["div", "class", "text"]
+                "EventSpeaker__description": ["div", "class", "text"],
+                "text events-speaker__company": ["div", "class", "text"]
             }
         },
         "online_status": {
@@ -196,7 +201,10 @@
         {
             "page": "event",
             "elements": 1,
-            "selectors":{}
+            "selectors":
+            {
+                "event-common-item__link": ["a", "class", "href"]
+            }
         },
         "title":
         {
@@ -204,7 +212,7 @@
             "elements": "all",
             "selectors":
             {
-                "event-list-item__title": ["a", "class", "title"]
+                "event-list-item__title": ["a", "class", "text"]
             }
         },
         "date":
@@ -214,15 +222,100 @@
             "selectors":
             {
                 "event-list-item__info": ["div", "class", "text"]
+            },
+            "excluding_selectors":
+            {
+                "event-list-item__info_online": ["div", "class"],
+                "event-list-item__info_location": ["div", "class"]
             }
         },
+        "time":
+        {
+            "page": "event",
+            "elements": 1,
+            "selectors":
+            {
+                "event-header__line" : ["div", "class", "text"]
+            }
+        },
+        "location":
+        {
+            "page": "event",
+            "elements": 1,
+            "selectors":
+            {
+                "event-header__line_icon_location" : ["a", "class", "text"]
+            }
+        },
+        "price":
+        {
+            "page": "event",
+            "elements": 1,
+            "default": "0",
+            "selectors":
+            {
+                "event-header__line_icon_price" : ["div", "class", "text"]
+            }
+        },
+        "language":
+        {
+            "page": "analysis",
+            "elements": 1,
+            "default": "ru"
+        },
+        "themes":
+        {
+            "page": "analysis"
+        },
+        "description":
+        {
+            "page": "event",
+            "elements": "all",
+            "selectors":
+            {
+                "user-generated": ["div", "class", "text"]
+            }
+        },
+        "speakers":
+        {
+            "page": "analysis"
+        },
+        "speakers_companies":
+        {
+            "page": "analysis"
+        },
         "online_status": {
+            "page": "event",
+            "elements": 1,
+            "selectors":
+            {
+                "event-header__line_icon_online": ["div", "class", "text"]
+            }
+        },
+        "organizers":
+        {
+            "page": "analysis"
+        },
+        "prize":
+        {
+            "page": "analysis"
+        },
+        "tags":
+        {
+            "page": "analysis"
+        },
+        "event_type":
+        {
             "page": "start",
             "elements": "all",
             "selectors":
             {
-                "event-list-item__info_online": ["div", "class", "text"]
+                "event-list-item__type": ["div", "class", "text"]
             }
+        },
+        "honor_description":
+        {
+            "page": "analysis"
         }
     },
     "dev.by":
