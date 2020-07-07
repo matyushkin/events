@@ -36,8 +36,9 @@ def time(text, page_data):
 
 
 def online_status(text, page_data):
-    if text in ('Online', 'Будет трансляция',
-                  'Прямая трансляция', 'Прямой эфир'):
+    if text.lower().strip() in ('online', 'будет трансляция',
+                  'прямая трансляция', 'прямой эфир',
+                  'онлайн-трансляция'):
         return 'Online'
     else:
         return 'Offline'
