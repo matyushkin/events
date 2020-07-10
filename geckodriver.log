@@ -394,3 +394,272 @@ JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning
 JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 1594135668575	Marionette	INFO	Stopped listening on port 39397
+1594150227357	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileisEoYi"
+*** You are running in headless mode.
+1594150229523	Marionette	INFO	Listening on port 42497
+1594150229564	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594150231844	Marionette	INFO	Stopped listening on port 42497
+1594151588156	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile16Ut76"
+*** You are running in headless mode.
+1594151590118	Marionette	INFO	Listening on port 34949
+1594151590163	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594151591513	Marionette	INFO	Stopped listening on port 34949
+1594319656169	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehbr1e4"
+*** You are running in headless mode.
+1594319658572	Marionette	INFO	Listening on port 33469
+1594319658577	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594319661008	Marionette	INFO	Stopped listening on port 33469
+1594321714306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNBcBu5"
+*** You are running in headless mode.
+1594321716171	Marionette	INFO	Listening on port 43385
+1594321716214	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594321720008	Marionette	INFO	Stopped listening on port 43385
+1594321940719	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegk1SQo"
+*** You are running in headless mode.
+1594321942758	Marionette	INFO	Listening on port 40687
+1594321942827	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594321945149	Marionette	INFO	Stopped listening on port 40687
+1594322143611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTnQ64x"
+*** You are running in headless mode.
+1594322145756	Marionette	INFO	Listening on port 44327
+1594322145819	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594322152364	Marionette	INFO	Stopped listening on port 44327
+1594322614607	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledwv2Jo"
+*** You are running in headless mode.
+1594322616568	Marionette	INFO	Listening on port 33281
+1594322616680	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1594325780947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8wZ5EV"
+*** You are running in headless mode.
+1594325782848	Marionette	INFO	Listening on port 41585
+1594325782854	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594325791486	Marionette	INFO	Stopped listening on port 41585
+1594326003695	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiley2bULS"
+*** You are running in headless mode.
+1594326005753	Marionette	INFO	Listening on port 40843
+1594326005802	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594326010303	Marionette	INFO	Stopped listening on port 40843
+console.warn: services.settings: main/whats-new-panel sync interrupted by shutdown
+1594326062277	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemlGjrl"
+*** You are running in headless mode.
+1594326064176	Marionette	INFO	Listening on port 36191
+1594326064186	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594326070987	Marionette	INFO	Stopped listening on port 36191
+1594326429446	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRi7Wnh"
+*** You are running in headless mode.
+1594326431225	Marionette	INFO	Listening on port 34453
+1594326431252	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594326439123	Marionette	INFO	Stopped listening on port 34453
+1594326792612	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZx474E"
+*** You are running in headless mode.
+1594326794688	Marionette	INFO	Listening on port 37747
+1594326794734	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1594326826748	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJ6QDnZ"
+*** You are running in headless mode.
+1594326828883	Marionette	INFO	Listening on port 35159
+1594326828956	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594326830214	Marionette	INFO	Stopped listening on port 35159
+1594326970953	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelMuoiN"
+*** You are running in headless mode.
+1594326972825	Marionette	INFO	Listening on port 38823
+1594326972884	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594326981372	Marionette	INFO	Stopped listening on port 38823
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+Exiting due to channel error.
+1594327109060	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiles3CMDF"
+*** You are running in headless mode.
+1594327111077	Marionette	INFO	Listening on port 45293
+1594327111170	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594327115948	Marionette	INFO	Stopped listening on port 45293
+1594408010287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQU0TXI"
+*** You are running in headless mode.
+1594408012810	Marionette	INFO	Listening on port 45631
+1594408012895	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594408014495	Marionette	INFO	Stopped listening on port 45631
+1594408019176	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePZk2XM"
+*** You are running in headless mode.
+1594408021115	Marionette	INFO	Listening on port 43235
+1594408021194	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594408025285	Marionette	INFO	Stopped listening on port 43235
+1594408029803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenCJBmB"
+*** You are running in headless mode.
+1594408031487	Marionette	INFO	Listening on port 44797
+1594408031513	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594408032752	Marionette	INFO	Stopped listening on port 44797
+1594408529552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeyObYR"
+*** You are running in headless mode.
+1594408531609	Marionette	INFO	Listening on port 42203
+1594408531667	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594408533097	Marionette	INFO	Stopped listening on port 42203
+1594408537748	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileN0EV5H"
+*** You are running in headless mode.
+1594408539790	Marionette	INFO	Listening on port 41641
+1594408539862	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594408541175	Marionette	INFO	Stopped listening on port 41641
+1594408543934	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilej8yeBN"
+*** You are running in headless mode.
+1594408545861	Marionette	INFO	Listening on port 41979
+1594408545962	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594408548165	Marionette	INFO	Stopped listening on port 41979
+1594409312334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea2IKG9"
+*** You are running in headless mode.
+Exiting due to channel error.
+Exiting due to channel error.
+1594409326754	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEcREKC"
+*** You are running in headless mode.
+1594409328869	Marionette	INFO	Listening on port 44497
+1594409328967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409330355	Marionette	INFO	Stopped listening on port 44497
+1594409334912	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGm98i3"
+*** You are running in headless mode.
+1594409336814	Marionette	INFO	Listening on port 37999
+1594409336818	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409337931	Marionette	INFO	Stopped listening on port 37999
+1594409341467	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7eVbp3"
+*** You are running in headless mode.
+1594409343621	Marionette	INFO	Listening on port 35599
+1594409343674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409344818	Marionette	INFO	Stopped listening on port 35599
+1594409447668	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile345mOx"
+*** You are running in headless mode.
+1594409449767	Marionette	INFO	Listening on port 37031
+1594409449780	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409451328	Marionette	INFO	Stopped listening on port 37031
+Exiting due to channel error.
+1594409458384	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGiQp2U"
+*** You are running in headless mode.
+1594409460367	Marionette	INFO	Listening on port 43699
+1594409460411	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409461718	Marionette	INFO	Stopped listening on port 43699
+1594409466252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelc0o3F"
+*** You are running in headless mode.
+1594409468430	Marionette	INFO	Listening on port 32921
+1594409468459	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409469663	Marionette	INFO	Stopped listening on port 32921
+1594409474201	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1b3pc1"
+*** You are running in headless mode.
+1594409476147	Marionette	INFO	Listening on port 40945
+1594409476210	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409477590	Marionette	INFO	Stopped listening on port 40945
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1594409742011	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq0HDCH"
+*** You are running in headless mode.
+1594409744019	Marionette	INFO	Listening on port 43013
+1594409744128	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409750096	Marionette	INFO	Stopped listening on port 43013
+1594409753663	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexUhfyh"
+*** You are running in headless mode.
+1594409755648	Marionette	INFO	Listening on port 44615
+1594409755694	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409760647	Marionette	INFO	Stopped listening on port 44615
+1594409765218	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7dR3R2"
+*** You are running in headless mode.
+1594409767187	Marionette	INFO	Listening on port 35561
+1594409767236	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409774346	Marionette	INFO	Stopped listening on port 35561
+1594409835737	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKUou6Y"
+*** You are running in headless mode.
+1594409837679	Marionette	INFO	Listening on port 34535
+1594409837745	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409847724	Marionette	INFO	Stopped listening on port 34535
+1594409852151	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile644qp4"
+*** You are running in headless mode.
+1594409854316	Marionette	INFO	Listening on port 45889
+1594409854358	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409859267	Marionette	INFO	Stopped listening on port 45889
+1594409863944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebjrP6P"
+*** You are running in headless mode.
+1594409865943	Marionette	INFO	Listening on port 39957
+1594409865953	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1594409870049	Marionette	INFO	Stopped listening on port 39957

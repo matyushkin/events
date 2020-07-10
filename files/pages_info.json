@@ -3,6 +3,7 @@
     {
         "name": "Яндекс",
         "load": "with_footer",
+        "footer_selector": "events__more",
         "footer_clicks": 1,
         "logo_file_name": "yandex.png",
         "type": "company"
@@ -11,7 +12,7 @@
     {
         "name": "IT-Events",
         "load": "multiple",
-        "logo_file_name": "yandex.png",
+        "logo_file_name": "it-events.png",
         "type": "aggregator"
     }
 }

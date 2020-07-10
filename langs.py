@@ -1,6 +1,9 @@
+import re
 import locale
 import datetime
 locale.setlocale(locale.LC_ALL, '')
+
+import files
 
 date_alias = {'rus':
                  {'weekdays':
@@ -54,3 +57,72 @@ def date_to_month(date_str:str):
                 return month_name.capitalize()
     else:
         return ''
+
+
+def text_cleaner(text):
+    bad = files.events_bad['combinations']
+    for b in bad:
+        variants = b, b.capitalize()
+        for v in variants:
+            # выделяем предложения, в которых есть искомые фразы
+            pattern = re.compile(f"[^.!?;]*({v})[^.?!;]*[.?!;]")
+            text = re.sub(pattern, '', text)        
+    return text.strip()
+
+
+
+def sentence_cleaner(text):
+    '''Возвращает текст после удаления некорректных выражений'''
+    bad_sentences = files.events_bad['sentences']
+    paragraphs = text.split('\n')
+    for p in paragraphs:
+        if p.lower().strip() in bad_sentences:
+            paragraphs.remove(p)
+    return '\n'.join(paragraphs).strip()
+
+
+def sentence_by_combination_cleaner(text):
+    pattern = re.compile(r'.*?[\.\?!]')
+    sentence_list = re.findall(pattern, text)
+    bad_combinations = files.events_bad['combinations']
+    for b in bad_combinations:
+        for s in sentence_list:
+            if b.lower() in s.lower():
+                sentence_list.remove(s)
+    return ''.join(sentence_list).strip()
+
+
+
+def find_speakers_in_text(text):
+    speakers = []
+    patterns_strings = [r'(?<=Спикер – ).*?(?=[.])']
+
+    for s in patterns_strings:
+        pattern = re.compile(s)
+        t = re.findall(pattern, text)
+        if t:
+            speakers += t
+            break
+    speakers = [speaker[0].upper() + speaker[1:] for speaker in speakers]
+    return speakers
+
+
+# r'(?<=[1-9]\) ).*(?=[ .;])*'
+def find_themes_in_text(text):
+    start_combinations = ["в программе вебинара",
+                    "к обсуждению",
+                    "которые мы затронем",
+                    "вы узнаете",
+                    "темы"]
+    themes = []
+    patterns_strings = [r'(?<=с докладом ["«]).*?(?=["»])',
+                    r'(?<= – ).*?(?=[.;:])']
+
+    for s in patterns_strings:
+        pattern = re.compile(s)
+        t = re.findall(pattern, text)
+        if t:
+            themes += t
+            break
+    themes = [theme[0].upper() + theme[1:] for theme in themes]
+    return themes

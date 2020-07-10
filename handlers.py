@@ -93,7 +93,7 @@ def location(location_string, page_data):
 
 
 def description(list_of_descriptions, page_data):
-    return  list_of_descriptions
+    return list_of_descriptions
 
 
 def themes(theme, page_data):

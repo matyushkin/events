@@ -1,5 +1,6 @@
 {
 	"Backend":["Django", "Backend", "Node.js"],
+	"Bid Data":["Vertica 10"], 
 	"Python":["Django", "Pytup"],
 	"JavaScript":["JavaScript", "Node.js", ".js"],
 	"Data Science":["CatBoost", "речевые технологии"],
@@ -17,5 +18,6 @@
 	"Security":["ключами", "сертификатами"],
 	"Doc":["Гипербатон"],
 	"Geo":["Яндекс.Карты", "Геосервис", "Яндекс.Навигатор", "Геореклама"],
-	"PM":["продакт-менеджер", "MVP"]
+	"PM":["продакт-менеджер", "MVP"],
+	"UX/UI": ["UX дизайн", "UX-дизайн", "UX/UI"]
 }

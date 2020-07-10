@@ -1,10 +1,10 @@
-[
-	{
-		"name": "Яндекс",
-		"url": "https://yandex.ru/",
-		"events_start_url": "https://events.yandex.ru/",
-		"logo_file_name": "yandex.png",
-		"description": "Поисковая система и интернет-портал. Поиск по интернету и другие сервисы: на yandex.ru есть карты и навигатор, транспорт и такси, погода",
-		"contact": ""
-	}
-]
+{
+    "Яндекс":
+    {
+       "url": "https://yandex.ru/",
+       "events_start_url": "https://events.yandex.ru/",
+       "logo_file_name": "yandex.png",
+       "description": "Поисковая система и интернет-портал. Поиск по интернету и другие сервисы: на yandex.ru есть карты и навигатор, транспорт и такси, погода",
+       "contact": ""
+    }
+}
