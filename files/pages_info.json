@@ -12,6 +12,9 @@
     {
         "name": "IT-Events",
         "load": "multiple",
+        "multiple_root": "https://it-events.com/?page=",
+        "multiple_start": 2,
+        "multiple_stop_selector":"event-list-item__title",
         "logo_file_name": "it-events.png",
         "type": "aggregator"
     }

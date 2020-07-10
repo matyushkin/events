@@ -23,8 +23,9 @@ def event_url(url, page_data):
 
 def reg_url(url, page_data):
     url = urls.utm_cleaner(url)
-    if url[0] == '#':
-        url = page_data['event_url'] + url
+    if url:
+        if url[0] == '#':
+            url = page_data['event_url'] + url
     return url
 
 

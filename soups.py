@@ -22,12 +22,14 @@ headers = requests.utils.default_headers()
 os.environ['MOZ_HEADLESS'] = '1'  # Headless Mozilla for Selenium
 
 
-if time.time() - os.path.getmtime(path) >= 4*3060:
-    # Если прошло не менее 4 часов с обновления базы данных
-    print('Обновляем базу данных...')
-    FORCE = True
-else:
-    FORCE = False
+# if time.time() - os.path.getmtime(path) >= 4*3060:
+#     # Если прошло не менее 4 часов с обновления базы данных
+#     print('Обновляем базу данных...')
+#     FORCE = True
+# else:
+#     FORCE = False
+
+FORCE = True
 
 
 def execute_read_query(query):
@@ -77,13 +79,26 @@ def read_HTML(url: str):
 
 
 def simple_load(url):
+    print(f'Загружаем данные со страницы {url}')
     page = requests.get(url, headers=headers).text
     return page
 
 
-def multiple_load(url):
-    page = requests.get(url, headers=headers).text
-    return page
+def multiple_load(url, root, start, stop_selector):
+    first_page = simple_load(url)
+    total_soup = BeautifulSoup(first_page, 'html.parser')
+    num = start
+    while True:
+        url = f'{root}{num}'
+        page = simple_load(url)
+        if stop_selector not in page:
+            break
+        else:
+            soup = BeautifulSoup(page, 'html.parser')
+            for child in soup.body.findChildren(recursive=False):
+                total_soup.body.append(child)
+            num += 1
+    return str(total_soup)
 
 
 def footer_load(url, num, selector):
@@ -97,16 +112,19 @@ def footer_load(url, num, selector):
     return html_from_page
 
 
-def get_page(url, start_url, force=FORCE):
+def get_page(url, start_url, force):
     '''Returns (with saving) s objects'''
     if force and (url == start_url):
+        info = files.pages_info[start_url]
         if files.pages_info[start_url]['load'] == 'with_footer':
-            info = files.pages_info[start_url]
-            footer_clicks = info['footer_clicks']
-            selector = info['footer_selector']
+            footer_clicks = info.get('footer_clicks', 1)
+            selector = info.get('footer_selector')
             page = footer_load(url, footer_clicks, selector)
         elif files.pages_info[start_url]['load'] == 'multiple':
-            page = multiple_load(url)
+            root = info.get("multiple_root")
+            start = info.get("multiple_start", 2)
+            stop_selector = info.get("multiple_stop_selector")
+            page = multiple_load(start_url, root, start, stop_selector)
         else:
             page = simple_load(url)
     elif force and (url != start_url):
@@ -123,8 +141,8 @@ def get_page(url, start_url, force=FORCE):
     return page
 
 
-def get(url, start_url, force=False):
-    page = get_page(url, start_url, force=False)
+def get(url, start_url, force=FORCE):
+    page = get_page(url, start_url, force)
     soup = BeautifulSoup(page, 'html.parser')
     return soup
 
