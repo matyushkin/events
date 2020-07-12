@@ -11,7 +11,10 @@ with open('files/pages_info.json') as pages_info_file:
 
 # main events dict-type structure
 with open('files/events.json') as events_file:
-    events = json.load(events_file)
+    try:
+        events = json.load(events_file)
+    except json.JSONDecodeError:
+        events = {}
 
 # basic characteristic of common fields
 with open('files/fields.json') as fields_file:
@@ -37,9 +40,9 @@ with open('files/events_special.json') as special_file:
 with open('files/events_promo.json') as promo_file:
     events_promo = json.load(promo_file)
 
-# events that I don't like
-with open('files/events_bad.json') as bad_file:
-    events_bad = json.load(bad_file)
+# events, phrases that I don't like
+with open('files/bad.json') as bad_file:
+    bad = json.load(bad_file)
 
 
 def pages_checked():
@@ -65,19 +68,20 @@ def fields_order(start_url):
 
 def get_content(page_data, field):
     start_url = page_data['start_url']
-    start_page_data = pages[start_url]
-    elements = start_page_data[field]['elements']
-    selectors = start_page_data[field]['selectors']
-    excluding_selectors = start_page_data[field].get('excluding_selectors', None)
-    default = start_page_data[field].get('default', '')
     event_url = page_data.get('event_url')
+    soup = page_data.get('soup')
+
+    field_data = pages[start_url][field]
+    elements = field_data.get('elements')
+    selectors = field_data.get('selectors')
+    excluding_selectors = field_data.get('excluding_selectors', None)
+    default = field_data.get('default', '')
+
     url = event_url if event_url else start_url
-    soup = soups.get(url, start_url)
     overlaps, ex_overlaps = [], []
     content = []
 
     try:
-        #print('FIELD', field)
         # Собираем информацию из селекторов, убираем лишние селекторы
         for key in selectors:
             tag, attr, content_type = selectors[key]
@@ -92,6 +96,8 @@ def get_content(page_data, field):
         for overlap in overlaps:
             if content_type == 'text':
                 content.append(overlap.text.strip())
+            elif content_type == 'html':
+                content.append(str(overlap))
             else:
                 content.append(overlap[content_type])
 

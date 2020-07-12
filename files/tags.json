@@ -1,6 +1,7 @@
 {
 	"Backend":["Django", "Backend", "Node.js"],
 	"Bid Data":["Vertica 10"], 
+	"DevOps":["DevOps", "DevOoops", "Kubernetes"],
 	"Python":["Django", "Pytup"],
 	"JavaScript":["JavaScript", "Node.js", ".js"],
 	"Data Science":["CatBoost", "речевые технологии"],

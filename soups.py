@@ -22,14 +22,12 @@ headers = requests.utils.default_headers()
 os.environ['MOZ_HEADLESS'] = '1'  # Headless Mozilla for Selenium
 
 
-# if time.time() - os.path.getmtime(path) >= 4*3060:
-#     # Если прошло не менее 4 часов с обновления базы данных
-#     print('Обновляем базу данных...')
-#     FORCE = True
-# else:
-#     FORCE = False
-
-FORCE = True
+if time.time() - os.path.getmtime(path) >= 4*3060:
+    # Если прошло не менее 4 часов с обновления базы данных
+    print('Обновляем базу данных...')
+    FORCE = True
+else:
+    FORCE = False
 
 
 def execute_read_query(query):
@@ -64,7 +62,6 @@ def write_HTML(url: str, html: str):
         print('Не удалось обработать {url}')
 
 
-
 def read_HTML(url: str):
     select_HTML = f"""
     SELECT html_str
@@ -79,7 +76,6 @@ def read_HTML(url: str):
 
 
 def simple_load(url):
-    print(f'Загружаем данные со страницы {url}')
     page = requests.get(url, headers=headers).text
     return page
 
@@ -112,7 +108,7 @@ def footer_load(url, num, selector):
     return html_from_page
 
 
-def get_page(url, start_url, force):
+def get_page(start_url, url, force=FORCE):
     '''Returns (with saving) s objects'''
     if force and (url == start_url):
         info = files.pages_info[start_url]
@@ -127,8 +123,10 @@ def get_page(url, start_url, force):
             page = multiple_load(start_url, root, start, stop_selector)
         else:
             page = simple_load(url)
+        write_HTML(url, page)
     elif force and (url != start_url):
         page = simple_load(url)
+        write_HTML(url, page)
     else:
         page = read_HTML(url)
         if not page:
@@ -141,8 +139,8 @@ def get_page(url, start_url, force):
     return page
 
 
-def get(url, start_url, force=FORCE):
-    page = get_page(url, start_url, force)
+def get_soup(start_url, url, force=FORCE):
+    page = get_page(start_url, url, force)
     soup = BeautifulSoup(page, 'html.parser')
     return soup
 

@@ -91,11 +91,12 @@
         "description":
         {
             "page": "event",
-            "elements": "all",
+            "elements": 1,
             "selectors":
             {
-                "text-block__container": ["div", "class", "text"],
-                "EventInfo__description": ["div", "class", "text"]
+                "fixed-container": ["div", "class", "html"],
+                "text-block__container": ["div", "class", "html"],
+                "EventInfo__description": ["div", "class", "html"]
             }
         },
         "speakers":
@@ -270,10 +271,10 @@
         "description":
         {
             "page": "event",
-            "elements": "all",
+            "elements": 1,
             "selectors":
             {
-                "user-generated": ["div", "class", "text"]
+                "user-generated": ["div", "class", "html"]
             }
         },
         "speakers":
