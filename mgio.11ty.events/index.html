@@ -1,0 +1,38 @@
+---
+title: Бесплатные IT-мероприятия
+keywords: вебинары, лекции, митапы, онлайн, программирование, информационные технологии
+description: Агрегатор IT-мероприятий. Вебинары, конференции, лекции, митапы и хакатоны.
+---
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	{% include head_meta.njk %}
+	<meta name="keywords" content="{{ keywords }}">
+	<meta name="description" content="{{ description }}">
+	{% include head_links.njk %}
+	{% include head_links.njk %}
+	{% include metrika.njk %}
+	<link rel="stylesheet" type="text/css" href="css/events_filter.css">
+	<title>{{ title }}</title>
+</head>
+<body>
+	<header>
+		{% include header.njk %}
+	</header>
+	<main>
+		<section>На этой странице приведен список IT-мероприятий, собранных <a href="https://github.com/matyushkin/events">специально разработанным парсером</a>. Страница обновляется ежедневно. В данный момент парсер считывает информацию со страниц <a href="https://events.yandex.ru/">мероприятий Яндекса</a> и <a href="https://it-events.com/">IT-Events</a>. Если вы хотите добавить свой ресурс, контакты расположены в конце страницы.</section>
+		<article>
+			<h1>Поиск IT-мероприятий</h1>
+			{% include events_filter.njk %}
+			{% include events.njk %}	
+		</article>
+
+	</main>
+	<footer>
+		{% include footer.njk %}
+	</footer>
+	<script src="src/events_filter.js" ></script>
+</body>
+</html>
+​
