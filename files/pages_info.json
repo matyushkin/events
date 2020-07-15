@@ -2,6 +2,7 @@
     "https://events.yandex.ru/":
     {
         "name": "Яндекс",
+        "name_gen": "Яндекса",
         "load": "with_footer",
         "footer_selector": "events__more",
         "footer_clicks": 1,
@@ -11,6 +12,7 @@
     "https://it-events.com/":
     {
         "name": "IT-Events",
+        "name_gen": "IT-Events",
         "load": "multiple",
         "multiple_root": "https://it-events.com/?page=",
         "multiple_start": 2,

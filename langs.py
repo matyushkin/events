@@ -2,6 +2,7 @@ import copy
 import re
 import locale
 import datetime
+
 locale.setlocale(locale.LC_ALL, '')
 
 from bs4 import BeautifulSoup
@@ -27,7 +28,10 @@ date_alias = {'rus':
 def make_datetime_string(date, time):
     date_dt = datetime.datetime.strptime(date,'%Y-%m-%d')
     date = date_dt.strftime('%a, %-d %B')
-    return f'{date} в {time}'
+    if time:
+        return f'{date} в {time}'
+    else:
+        return date
 
 
 def month_names_for_time_filters():
@@ -158,3 +162,24 @@ def soup_to_text(s):
             'timing':timing_str,
             'speakers':speakers,
             'urls':urls_list}
+
+
+def string_of_page_checked_urls(pages_checked):
+    str_list = []
+    for page in pages_checked:
+        s = f'<a href="{page}">{files.pages_info[page]["name_gen"]}</a>'
+        str_list.append(s)
+    ps = ", ".join(str_list)
+    ps = ' и'.join(ps.rsplit(",", 1))
+    return ps
+
+
+def date_interval_string(start_date, end_date):
+    start_date = datetime.datetime.strptime(start_date,'%Y-%m-%d')
+    end_date = datetime.datetime.strptime(end_date,'%Y-%m-%d')
+    if start_date.year == end_date.year:
+        return f"с {start_date.strftime('%-d %B')} по \
+{end_date.strftime('%-d %B %Y')} года"
+    else:
+        return f"с {start_date.strftime('%-d %B %Y')} года по \
+{end_date.strftime('%d %B %Y')} года"
