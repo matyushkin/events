@@ -22,3 +22,7 @@ JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: WebGL warning
 JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 400: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 1594833803781	Marionette	INFO	Stopped listening on port 33711
+1594926201580	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7ON8Z4"
+*** You are running in headless mode.
+1594926203657	Marionette	INFO	Listening on port 38541
+1594926203688	Marionette	WARN	TLS certificate errors will be ignored for this session
